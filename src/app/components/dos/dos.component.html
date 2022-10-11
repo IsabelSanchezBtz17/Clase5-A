@@ -1,0 +1,16 @@
+<p>dos works!</p>
+
+
+<form *ngIf="infoService.data$ | async as info "> 
+   
+    <div>
+        <label>Nombre:</label>
+        <input type="text" name="name"  [value]="info?.password">
+        <label>Email:</label>
+        <input type="text" name="password" [value]="info?.password">
+    </div>
+</form>
+
+<ng-component *ngIf=" detector$ | async">
+
+</ng-component>
